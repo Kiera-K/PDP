@@ -34,7 +34,7 @@ Changes made :
 
 
 ## Citations :
-Professor Clark Freifeld
-TA - Tanay Joshi
-TA - Jaynil Patel
+1) Professor Clark Freifeld
+2) Tanay Joshi
+3) Jaynil Patel
 
