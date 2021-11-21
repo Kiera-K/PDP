@@ -1,0 +1,88 @@
+## PROJECT 4
+
+## 1. Overview:
+
+This project provides a controller for the Dungeons game model. The model contains functionality 
+to create a bespoke dungeon based on user inputs that are aceepted as command line arguments, 
+for the creation of a player and to add arrows, treasure and otyughs in the dungeon. 
+The dungeon is created using a specialized Kruskal's algorithm depending on whether the dungeon is wrapping on noo-wrapping.
+The controller for the model allows the user to play the game by moving the player from the start location to the end location
+while outputing the surroundings of the player at each step. The player can defend itself from the otyugh by shooting arrows.
+It can also collect arrows and treasure whereever they may be present.
+
+## 2. List of features:
+
+The playGame() method is the main feature that will allow a user to play the game of moving the player across the dungeon from start to
+end, collecting arrows and treasure and notifying the user of the players surroundings.
+
+## 3. How to run:
+
+Please run the jar file.
+The order of the arguments are as follows : 
+1) m : number of rows of the dungeon
+2) n : number of columns of the dungeon
+3) interconnectivity : interconnectivity of the dungeon
+4) treasurePercentage : Percentage of caves that should have treasure.
+5) monsterCount : The number of otyughs that should be present in the dungeon.
+6) isWrapped : Whether the dungeon should be wrapping or not.
+
+Example values : 4 6 6 20 3 y
+     
+## 4. How to use the program:
+
+Run the jar file with arguments as mentioned above in the order => (m n interconnectivity treasurePercentage monsterCount, isWrapped).
+It will create a dungeon object with the given arguments and allow the user to play via command line inputs.
+
+## 5. Description of examples:
+
+There are 2 example runs.
+
+1) "PlayerEatenByOtyugh.txt" has a wrapping dungeon of size 4 x 6 comprising of caves and tunnels with interconnectivity of 6.
+It has 8 monsters and treasurePercentage (which is the same for arrows as well) is 60.
+This run depicts the player being eaten by an otyugh and losing the game.
+
+2) "PlayerWon.txt" has a wrapping dungeon of size 4 x 6 comprising of caves and tunnels with interconnectivity of 6.
+It has 3 monsters and treasurePercentage (which is the same for arrows as well) is 60.
+It shows the player navigating through the dungeon, picking up arrows and treasure, killing an otyugh and reaching
+the end of the dungeon and winning the game.
+
+1. Information about System.in and System.out being used is printed along with the parameters used to initialize the
+   game.
+2. Player explores the dungeon.
+3. Picks action from the ones available.
+4. Picks up treasure.
+5. Picks up arrows.
+6. Kills Otyughs.
+7. Gets Killed by Otyugh.
+8. Wins game.
+9. Loses game.
+10. Quits game.
+
+## 6. Design Changes:
+
+1. Initially, I was checking for the monster health using integers. But then I changed that into an enum that 
+would hold the healths of the monster : HEALTHY, INJURED, DEAD
+2. Initially had an ordinary DFS method for arrow traversal. But then changed that into a specialized DFS that could take the arrow to the correct location.
+3. Initially I was leaving the dead body of the monster in the cave. But then decided to delete the dead monster from the cave.
+
+## 7. Assumptions:
+
+1. After the Otyugh dies, it's dead body is removed from the cave.
+2. The amount of treasure collected does not get converted into lives for the player as it might in a normal game.
+3. There can be multiple arrows in a cave.
+4. If arrows are found in a cave, and the user decides to pick, the player must pick all arrows and not just a specified number.
+5. Similarly, if treasure is found, and the user decides to pick, the player must pick all the treasure instead of just a specific one like only ruby.
+6. When a player escapes an injured monster by a probability of 50%, the player and the injured monster coexist in that cave.
+
+## 8. Limitations:
+
+1) The player health does not have levels and can take only 2 values : Alive or dead. (True or false)
+2) There can be only 1 monster per cave.
+3) There can be only 1 player per dungeon.
+
+## 9. Citations:
+
+Prof. Clark Freifeld
+Tanay Joshi
+Sean Maloney
+Swapnil Bhaumik
