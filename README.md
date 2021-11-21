@@ -46,18 +46,6 @@ It has 3 monsters and treasurePercentage (which is the same for arrows as well) 
 It shows the player navigating through the dungeon, picking up arrows and treasure, killing an otyugh and reaching
 the end of the dungeon and winning the game.
 
-1. Information about System.in and System.out being used is printed along with the parameters used to initialize the
-   game.
-2. Player explores the dungeon.
-3. Picks action from the ones available.
-4. Picks up treasure.
-5. Picks up arrows.
-6. Kills Otyughs.
-7. Gets Killed by Otyugh.
-8. Wins game.
-9. Loses game.
-10. Quits game.
-
 ## 6. Design Changes:
 
 1. Initially, I was checking for the monster health using integers. But then I changed that into an enum that 
