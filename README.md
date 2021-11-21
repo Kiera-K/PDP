@@ -70,8 +70,8 @@ would hold the healths of the monster : HEALTHY, INJURED, DEAD
 
 ## 9. Citations:
 
-Professor Clark Freifeld
-Tanay Joshi
-Sean Maloney
+Professor Clark Freifeld,
+Tanay Joshi,
+Sean Maloney,
 Swapnil Bhaumik
 
