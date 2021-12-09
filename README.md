@@ -1,4 +1,4 @@
-## PROJECT 4
+## PROJECT 5
 
 ## 1. Overview:
 
@@ -48,10 +48,7 @@ the end of the dungeon and winning the game.
 
 ## 6. Design Changes:
 
-1. Initially, I was checking for the monster health using integers. But then I changed that into an enum that 
-would hold the healths of the monster : HEALTHY, INJURED, DEAD
-2. Initially had an ordinary DFS method for arrow traversal. But then changed that into a specialized DFS that could take the arrow to the correct location.
-3. Initially I was leaving the dead body of the monster in the cave. But then decided to delete the dead monster from the cave.
+1. Initially I thought the view would have only a view class and a panel. But then I had to create a number of other classes to override ActionListeners and MouseAdapters and also create customActionListeners.
 
 ## 7. Assumptions:
 
@@ -71,7 +68,5 @@ would hold the healths of the monster : HEALTHY, INJURED, DEAD
 ## 9. Citations:
 
 1) Professor Clark Freifeld
-2) Tanay Joshi
-3) Sean Maloney
-4) Swapnil Bhaumik
+2) Sean Maloney
 
