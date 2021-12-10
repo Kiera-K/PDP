@@ -69,7 +69,7 @@ without arguments to enter the GUI mode.
 
 Screenshots attached.
 
-## 6. Design Changes:
+## 6. Design Changes: (Extra credit features)
 
 1. Initially I thought the view would have only a view class and a panel. But then I had to create a number of other classes 
 to override ActionListeners and MouseAdapters and also create customActionListeners.
